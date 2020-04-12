@@ -7,6 +7,15 @@ public class Product {
     private int price;
     private List<Customer> borrowers = new ArrayList<>();
 
+    public Product() {
+    }
+
+    public Product(String productName, int yearOfProduction, int price, List<Customer> borrowers) {
+        this.productName = productName;
+        this.yearOfProduction = yearOfProduction;
+        this.price = price;
+        this.borrowers = borrowers;
+    }
 
     public String getProductName() {
         return productName;

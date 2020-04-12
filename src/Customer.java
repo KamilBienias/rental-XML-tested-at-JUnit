@@ -8,6 +8,15 @@ public class Customer {
     private String pesel;
     private GregorianCalendar dateOfBirth;
 
+    public Customer() {
+    }
+
+    public Customer(String firstName, String lastName, String pesel, GregorianCalendar dateOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.pesel = pesel;
+        this.dateOfBirth = dateOfBirth;
+    }
 
     public String getFirstName() {
         return firstName;
