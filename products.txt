@@ -1,0 +1,4 @@
+latarka 1923 12 []
+komputer 2004 200 [Customer{ firstName='James', lastName='Clooney', pesel='84736592847', dateOfBirth=6.4.2001}]
+agrafka 2003 34 [Customer{ firstName='Karol', lastName='Adamowski', pesel='10293847565', dateOfBirth=12.4.1923}]
+zegarek 1987 50 []
