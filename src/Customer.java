@@ -5,7 +5,7 @@ public class Customer {
 
     private String firstName;
     private String lastName;
-    private Long pesel;
+    private String pesel;
     private GregorianCalendar dateOfBirth;
 
 
@@ -25,11 +25,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public Long getPesel() {
+    public String getPesel() {
         return pesel;
     }
 
-    public void setPesel(Long pesel) {
+    public void setPesel(String pesel) {
         this.pesel = pesel;
     }
 

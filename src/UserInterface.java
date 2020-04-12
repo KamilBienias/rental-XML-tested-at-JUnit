@@ -116,14 +116,14 @@ public class UserInterface {
 
         System.out.print("Select a pesel of customer: ");
 
-        Long pesel = 0L;
+        String pesel = "";
         boolean isPeselError = true;
         while (isPeselError) {
             try {
-                pesel = scanner.nextLong();
-                String peselAsString = String.valueOf(pesel);//potrzebne do peselAsString.length() bo pesel.length() sie nie da
+                pesel = scanner.next();
+                Long.valueOf(pesel);//spr czy pesel da się zrzutować na liczbę long
 
-                if(peselAsString.length() != 11){
+                if(pesel.length() != 11){
                     throw new IllegalArgumentException();
                 }
                 isPeselError = false;
@@ -198,14 +198,14 @@ public class UserInterface {
         newCustomer.setLastName(lastName);
 
         System.out.print("Pesel (11 digits): ");
-        Long pesel = 0L;
+        String pesel = "";
         boolean isPeselError = true;
         while (isPeselError) {
             try {
-                pesel = scanner.nextLong();
-                String peselAsString = String.valueOf(pesel);//potrzebne do peselAsString.length() bo pesel.length() sie nie da
+                pesel = scanner.next();
+                Long.valueOf(pesel);//spr czy pesel da się zrzutować na liczbę long
 
-                if(peselAsString.length() != 11){
+                if(pesel.length() != 11){
                     throw new IllegalArgumentException();
                 }
                 isPeselError = false;
